@@ -1,7 +1,10 @@
 import express from "express";
 import bodyParser from "body-parser";
 import fs from "fs";
-import path from "path";
+import path from "node:path";
+
+const __filename = new URL(import.meta.url).pathname;
+const __dirname = path.dirname(__filename);
 
 const app = express();
 const port = 3000;
@@ -9,8 +12,11 @@ const port = 3000;
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: true }));
 
+// Define the correct relative file path
 const dataDirectory = path.join(__dirname, "data");
 const filePath = path.join(dataDirectory, "blogData.json");
+
+console.log(filePath)
 
 function saveDataToFile(data) {
     fs.writeFile(filePath, JSON.stringify(data), (err) => {
