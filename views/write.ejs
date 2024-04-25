@@ -1,0 +1,26 @@
+<%- include('partials/header.ejs') %>
+    <div class="form-container">
+        <form action="/post" method="post">
+            <h3>Write your blog</h3>
+            <div class="sub-form">
+                <label for="title">Title</label>
+                <input type="text" id="title" name="title" placeholder="Add title to your post">
+                <label for="title">Upload image via URL</label>
+                <label for="images" class="drop-container" id="dropcontainer">
+                    <img src="/images/upload.png" alt="upload image" class="upload-pic" height="40">
+                    <input type="text" id="author" name="imageUrl" placeholder="Add image URL">
+                </label>
+                <label for="code">Access Code</label>
+                <input type="text" id="code" name="code" placeholder="Add 4 digit access code" >
+            </div>
+
+            <div class="sub-form">
+                <label for="content">Content</label>
+                <textarea id="content" name="content" placeholder="Write your content here"></textarea>
+                <label for="author">Author</label>
+                <input type="text" id="author" name="author" placeholder="Add author name">
+                <button type="submit" class="submit-btn">Create</button>
+            </div>
+        </form>
+    </div>
+    <%- include('partials/footer.ejs') %>

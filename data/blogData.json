@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "title": "Embracing Tranquility: A Portrait of the beach",
+        "content": "The beach is a place of unparalleled natural beauty, where the rhythmic melody of crashing waves serenades the soul and the golden sands stretch as far as the eye can see. With each gentle breeze carrying the salty scent of the ocean, one cannot help but be captivated by the enchanting allure of this coastal paradise. The azure expanse of the sea merges seamlessly with the vastness of the sky, creating a breathtaking panorama that evokes a sense of awe and wonder. From the vibrant hues of sunrise painting the horizon with hues of pink and orange to the tranquil whispers of sunset casting a golden glow upon the waters, every moment spent at the beach is a timeless embrace of nature's magnificence. Whether seeking solace in the tranquil lullaby of the waves or partaking in the exhilarating thrill of water sports, the beach offers a sanctuary for relaxation, recreation, and rejuvenation amidst the ever-changing tides of life.",
+        "imageUrl": "https://c1.wallpaperflare.com/preview/460/412/978/beach-sea-holiday-waves.jpg",
+        "code": "2026",
+        "author": "kalyan maharajulu",
+        "date": "April 8, 2024"
+    },
+    {
+        "id": 2,
+        "title": "top cars",
+        "content": "The names and values of the non-file form controls are sent to the server as name=value pairs joined with ampersands. The action value should be a file on the server that can handle the incoming data, including ensuring server-side validation. The server then responds, generally handling the data and loading the URL defined by the action attribute, causing a new page load (or a refresh of the existing page, if the action points to the same page)",
+        "imageUrl": "https://c4.wallpaperflare.com/wallpaper/68/991/701/hypercar-bugatti-chiron-8k-wallpaper-preview.jpg",
+        "code": "2026",
+        "author": "roy",
+        "date": "April 24, 2024"
+    }
+]

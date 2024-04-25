@@ -1,0 +1,38 @@
+<%- include('partials/header.ejs') %>
+    <div class="post-container">
+        <div class="post-sub-container">
+            <div class="cover-image">
+                <img src="<%= post.imageUrl %>" alt="post-image">
+            </div>
+            <div class="title">
+                <h1>
+                    <%= post.title %>
+                </h1>
+            </div>
+            <div class="post-details">
+                <span>
+                    <div class="profile-pic">
+                        <img src="/images/ninja.gif" alt="user" height="30">
+                    </div> By <%= post.author %>
+                        <p> | </p> <img src="/images/time.png" height="25" alt="uploaded">
+                        <%= post.date %>
+                </span>
+
+                <span>
+                    <div class="btn edit-btn">
+                        <a href="/edit/<%= post.id %>"><img src="/images/edit-text.png" alt="edit-post" height="25">Edit</a>
+                    </div>
+
+                    <div class="btn delete-btn">
+                        <a href="/delete/<%= post.id %>"><img src="/images/bin.png" alt="delete-post" height="25">Delete</a>
+                    </div>
+                </span>
+            </div>
+            <div class="content">
+                <p>
+                    <%= post.content %>
+                </p>
+            </div>
+        </div>
+    </div>
+    <%- include('partials/footer.ejs') %>

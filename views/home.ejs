@@ -1,0 +1,110 @@
+<%- include('partials/header.ejs') %>
+
+    <div class="news-letter">
+        <div class="quote">
+            <span>" Craft your narrative, discover, share and inspire "</span>
+        </div>
+        <div class="custom-search">
+            <input type="text" class="email" placeholder="subscribe to our news letter">
+            <button class="sb-btn">Subscribe</button>
+        </div>
+        <div class="divider">
+            <div class="line"></div>
+        </div>
+    </div>
+
+    <div class="main-container">
+        <% posts.forEach(post=> { %>
+
+            <div class="post-card">
+                <img src="<%= post.imageUrl %>" alt="sunset" class="post-image">
+                <div class="post-title">
+                    <%= post.title %>
+                </div>
+                <div class="author-details">
+                    <div class="profile-pic">
+                        <img src="/images/ninja.gif" alt="user" height="26">
+                    </div>
+                    <span class="author">
+                        <%= post.author %>
+                    </span>
+                    <span> | </span>
+                    <span class="post-date">
+                        <%= post.date %>
+                    </span>
+                </div>
+                <a href="/posts/<%= post.id %>"><button class="read-more">Read more</button></a>
+
+            </div>
+            <% }); %>
+
+                <div class="post-card">
+                    <img src="/images/sun.png" alt="sunset" class="post-image">
+                    <div class="post-title">Top sunset places</div>
+                    <div class="author-details">
+                        <div class="profile-pic">
+                            <img src="/images/ninja.gif" alt="user" height="26">
+                        </div>
+                        <span class="author">kalyan roy</span>
+                        <span> | </span>
+                        <span class="post-date">2024-03-01</span>
+                    </div>
+                    <button class="read-more">Read more</button>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="post-card">
+                    <img src="/images/atlanta.png" alt="sunset" class="post-image">
+                    <div class="post-title">Top sunset places</div>
+                    <div class="author-details">
+                        <div class="profile-pic">
+                            <img src="/images/ninja.gif" alt="user" height="26">
+                        </div>
+                        <span class="author">kalyan roy</span>
+                        <span> | </span>
+                        <span class="post-date">2024-03-01</span>
+                    </div>
+                    <button class="read-more">Read more </button>
+                </div>
+
+                <div class="post-card">
+                    <img src="/images/smoke.png" alt="sunset" class="post-image">
+                    <div class="post-title">Top sunset places</div>
+                    <div class="author-details">
+                        <div class="profile-pic">
+                            <img src="/images/ninja.gif" alt="user" height="26">
+                        </div>
+                        <span class="author">kalyan roy</span>
+                        <span> | </span>
+                        <span class="post-date">2024-03-01</span>
+                    </div>
+                    <button class="read-more">Read more</button>
+                </div>
+
+                <div class="post-card">
+                    <img src="/images/mountains.png" alt="sunset" class="post-image">
+                    <div class="post-title">Top sunset places</div>
+                    <div class="author-details">
+                        <div class="profile-pic">
+                            <img src="/images/ninja.gif" alt="user" height="26">
+                        </div>
+                        <span class="author">kalyan roy</span>
+                        <span> | </span>
+                        <span class="post-date">2024-03-01</span>
+                    </div>
+                    <button class="read-more">Read more</button>
+                </div>
+
+    </div>
+
+    <%- include('partials/footer.ejs') %>
