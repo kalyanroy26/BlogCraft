@@ -9,10 +9,8 @@ const port = 3000;
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: true }));
 
-const filePath = path.join(
-    "D:\\kalyan\\js projects\\BlogCraft\\data",
-    "blogData.json"
-);
+const dataDirectory = path.join(__dirname, "data");
+const filePath = path.join(dataDirectory, "blogData.json");
 
 function saveDataToFile(data) {
     fs.writeFile(filePath, JSON.stringify(data), (err) => {
